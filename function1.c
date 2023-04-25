@@ -18,7 +18,7 @@ unsigned int _strlen(char *s)
 /**
  * _stg_reverse - is reverses  the given string
  *
- * @s: is the string 
+ * @s: is the string
  */
 
 void reverse_str(char s[])
