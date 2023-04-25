@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 				if (format[k + 2] == '\0')
 					return (-1);
 
-			function = get_print(&format[++k]);
+			function = get_prints(&format[++k]);
 			
 			pri_n += function ? function(arguments) : _putchar('%') + _putchar(format[k]);
 		}

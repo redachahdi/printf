@@ -22,5 +22,6 @@ int _printf(const char *format, ...);
 int char_print(va_list list);
 int string_print(va_list list);
 int percet_print(va_list list);
-
+int (*get_prints(const char *format))(va_list);
+int _putchar(char c);
 #endif
