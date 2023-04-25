@@ -57,4 +57,12 @@ void _itoa(long n, char s[])
 	s[k] = '\0';
 	reverse_str(s);
 }
-
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	else
+		return (0);
+}
