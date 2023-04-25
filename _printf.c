@@ -29,19 +29,15 @@ int _printf(const char *format, ...)
 		{
 			if (format[k + 1] == '\0')
 				return (-1);
-			
 			for (; format[k + 1] == ' '; k++)
 				if (format[k + 2] == '\0')
 					return (-1);
-
-			function = get_prints(&format[++k]);
-			
-			pri_n += function ? function(arguments) : _putchar('%') + _putchar(format[k]);
+		function = get_prints(&format[++k]);
+	pri_n += function ? function(arguments) : _putchar('%') + _putchar(format[k]);
 		}
 		else
 			pri_n += _putchar(format[k]);
 	}
-
 	va_end(arguments);
 	return (pri_n);
 }
