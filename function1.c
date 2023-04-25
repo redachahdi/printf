@@ -38,7 +38,7 @@ void reverse_str(char s[])
 /**
  * _itoa - is the Converts a long integer .
  *
- *  @n: is the long integer 
+ *  @n: is the long integer
  *  @s: is  the character array to store the converted string in
  */
 
