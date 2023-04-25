@@ -10,7 +10,7 @@
  * struct pt - that struct for the printer functions
  *
  * @type_arg: is the identifier
- * @f: is the pointer to the printer of functions.
+ * @function: is the pointer to the printer of functions.
  */
 typedef struct pt
 {
