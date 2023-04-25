@@ -1,0 +1,50 @@
+#include "main.h"
+
+/**
+ * char_print - that prints the character from the arguments va_list .
+ *
+ * @list: va_list arg.
+ * Return: count of characters printed.
+ */
+
+int char_print(va_list list)
+{
+	_putchar(va_arg(list, int));
+	return (1);
+}
+
+/**
+ * string_print - that prints the string from the argument.
+ *
+ * @list: that containing the string to be printed.
+ * Return: characters printed.
+ */
+
+int string_print(va_list list)
+{
+	int k = 0;
+	char *string;
+
+	string = va_arg(list, char *);
+	if (!string)
+		string = "(null)";
+
+	for (; string[k]; k++)
+		_putchar(string[k]);
+
+	return (k);
+}
+
+/**
+ * percet_print - that prints the percent sign.
+ *
+ * @list: the list of arguments ..
+ * Return: characters printed.
+ */
+
+int percet_print(va_list list)
+{
+	(void)(list);
+	_putchar('%');
+	return (1);
+}
