@@ -34,7 +34,7 @@ int _print_int(va_list list)
  */
 int _print_unsigned(va_list list)
 {
-	unsigned int num = va_arg(list, unsigned int);
+	unsigned int numbr = va_arg(list, unsigned int);
 	char buffer[50];
 
 	_itoa(numbr, buffer);

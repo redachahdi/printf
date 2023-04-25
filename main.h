@@ -26,7 +26,8 @@ int (*get_prints(const char *format))(va_list);
 int _putchar(char c);
 int _print_int(va_list list);
 int _print_unsigned(va_list list);
-void itoa(long n, char s[]);
+void _itoa(long n, char s[]);
 void _stg_reverse(char s[]);
 int _puts(char *str);
+unsigned int _strlen(char *s);
 #endif
