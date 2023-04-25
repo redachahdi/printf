@@ -15,9 +15,8 @@
 int _printf(const char *format, ...)
 {
 	va_list arguments, cp_argument;
-	flags_t flag = {0};
 	int (*function)(va_list);
-	int k = 0, g, pri_n = 0, numbr, w_idth;
+	int k = 0, g, pri_n = 0, w_idth;
 
 	if (!format)
 		return (-1);
@@ -39,9 +38,9 @@ int _printf(const char *format, ...)
 			for (; format[k + 1] == ' '; k++)
 				if (format[k + 2] == '\0')
 					return (-1);
-			numbr = va_arg(cp_argument, long);
-			parse_flags(format, &flag, numbr, &pri_n, &k);
-			function = get_print(&format[++k]);
+			
+			
+			function = get_prints(&format[++k]);
 pri_n += function ? function(arguments) : _putchar('%') + _putchar(format[k]);
 		}
 		else

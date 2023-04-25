@@ -30,4 +30,5 @@ void _itoa(long n, char s[]);
 void reverse_str(char s[]);
 int _puts(char *str);
 unsigned int _strlen(char *s);
+int _isdigit(int c);
 #endif
