@@ -27,7 +27,7 @@ int _print_int(va_list list)
 
 
 /**
- * print_unsigned - that prints unsigned the integers  
+ * _print_unsigned - that prints unsigned the integers  
  *
  * @list: is the va_list of unsigned integers .
  * Return: number of characters printed

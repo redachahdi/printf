@@ -21,7 +21,7 @@ unsigned int _strlen(char *s)
  * @s: is the string 
  */
 
-void _stg_reverse(char s[])
+void reverse_str(char s[])
 {
 	unsigned int k = 0, legh = 0;
 	char tp;
@@ -55,6 +55,6 @@ void _itoa(long n, char s[])
 	if (sig < 0)
 		s[k++] = '-';
 	s[k] = '\0';
-	_stg_reverse(s);
+	reverse_str(s);
 }
 
