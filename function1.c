@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _str_len - is the length of the given string
+ * _strlen - is the length of the given string
  * @s: the string
  * Return: the length of given string
  */
@@ -16,7 +16,7 @@ unsigned int _strlen(char *s)
 	return (legh);
 }
 /**
- * _stg_reverse - is reverses  the given string
+ * reverse_str - is reverses  the given string
  *
  * @s: is the string
  */
@@ -57,6 +57,12 @@ void _itoa(long n, char s[])
 	s[k] = '\0';
 	reverse_str(s);
 }
+/**
+ * _isdigit - checks for a digit
+ * @c:  is the character to be checked
+ *
+ * Return:  is 1 if c is a digit, else 0
+ */
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
