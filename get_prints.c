@@ -14,6 +14,8 @@ int (*get_prints(const char *format))(va_list)
 		{"c", _print_char},
 		{"s", _print_string},
 		{"%", _print_percet},
+		{"d", _print_int},
+		{"i", _print_int},
 		{NULL, NULL}
 	};
 	for (; pt_types[k].type_arg; k++)
