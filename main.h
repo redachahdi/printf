@@ -7,21 +7,21 @@
 #include <stdarg.h>
 
 /**
- * struct print - that struct for the printer functions
+ * struct pt - that struct for the printer functions
  *
  * @type_arg: is the identifier
  * @f: is the pointer to the printer of functions.
  */
-typedef struct print
+typedef struct pt
 {
 	char *type_arg;
-	int (*f)(va_list, char *, unsigned int);
-} print_td;
+	int (*function)(va_list);
+} pt_td;
 
 int _printf(const char *format, ...);
-int char_print(va_list list);
-int string_print(va_list list);
-int percet_print(va_list list);
+int _print_char(va_list list);
+int _print_string(va_list list);
+int _print_percet(va_list list);
 int (*get_prints(const char *format))(va_list);
 int _putchar(char c);
 #endif
