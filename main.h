@@ -24,4 +24,6 @@ int _print_string(va_list list);
 int _print_percet(va_list list);
 int (*get_prints(const char *format))(va_list);
 int _putchar(char c);
+int _print_int(va_list list);
+int _print_unsigned(va_list list);
 #endif
